@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="4"/>
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/loaction_icon"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/located"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:id="@+id/location_text"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/time_chose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:text="设置闹钟"/>
+    <CheckBox
+        android:text="打开定位"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationButton"
+        style="@style/CustomCheckboxTheme"/>
+
+    <Button
+        android:id="@+id/edit_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提 交"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:visibility="invisible"
+        />
+</LinearLayout>
